@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, #ffccd5, #ffe6eb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+.mensaje {
+  color: #c70039;
+  font-size: 2em;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+  font-weight: bold;
+}
+
+.heart {
+  position: absolute;
+  top: -50px;
+  font-size: 24px;
+  animation: fall linear infinite;
+  color: #ff4d6d;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.8;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
+
+
+.contenedor-mensaje{
+  text-align: center;
+  margin: 40px auto;
+
+}
+
+.arriba, .abajo{
+  font-size: 1.5rem;
+  color:#b30059;
+  margin:10px;
+}
+
+.foto-pareja{
+  width: 250px;
+  border-radius:20px;
+  box-shadow: 0 4PX 10PX rgba(0,0,0,0.3);
+}
